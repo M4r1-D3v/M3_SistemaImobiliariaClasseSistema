@@ -46,6 +46,18 @@ public class Imovel {
         this.moradores = moradores;
     }
 
+    public void excluirMoradorCPF(String cpf){
+        Morador moradorExcluido = null;
+        for (Morador referencia:moradores) {
+            if (referencia.getCpf().equals(cpf)){
+                moradorExcluido = referencia;
+                System.out.println("Morador localizado e excluído com sucesso.");
+            }
+
+        }
+        moradores.remove(moradorExcluido);
+    }
+
     @Override
     public String toString() {
         StringBuilder retorno = new StringBuilder();
