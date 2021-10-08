@@ -46,6 +46,10 @@ public class Imovel {
         this.moradores = moradores;
     }
 
+    public void adicionarMorador(Morador novoMorador){
+        moradores.add(novoMorador);
+    }
+
     public void excluirMoradorCPF(String cpf){
         Morador moradorExcluido = null;
         for (Morador referencia:moradores) {
