@@ -14,7 +14,9 @@ public class Sistema {
     //Método para exibir as opções do menu:
 
     public static void exibirMenu() {
-        System.out.println("Seja bem vinde ao sistema da Imobiliária X");
+        System.out.println("--------------------------------");
+        System.out.println("Seja bem vinde ao sistema da Imobiliária MinhaCasa!");
+        System.out.println("--------------------------------");
         System.out.println("Para cadastrar um imóvel, digite: 1");
         System.out.println("Para exibir a lista dos imóveis cadastrados, digite: 2");
         System.out.println("Para sair do sistema, digite: 3");
@@ -100,6 +102,7 @@ public class Sistema {
         while (menuGeral) {
 
             exibirMenu(); //exibe menu de opções para o usuário.
+            System.out.println("--------------------------------");
             int escolhaUsuario = entradaDados("Por favor digite a opção desejada:").nextInt();//recebe os dados do usuário;
 
             switch (escolhaUsuario) { //submenu com o desdobramento da escolha do usuário feita no menu anterior
@@ -141,4 +144,4 @@ public class Sistema {
     //Método para exibir a lista dos imóveis cadastrados: apenas um sout(imobiliaria) qd for juntar tudo.
 }
 
-}
+
